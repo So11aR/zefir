@@ -1,0 +1,454 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background: rgb(255, 253, 249);
+    background: radial-gradient(circle, rgba(255, 253, 249, 1) 0%, rgba(255, 227, 237, 1) 100%);
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.2;
+}
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-light .navbar-brand {
+    color: coral;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 242, 242);
+    transition: 0.3s;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: rgb(219, 74, 48);
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'Coda Caption', sans-serif;
+    letter-spacing: -3px;
+}
+
+.navbar {
+    padding: 20px 0 10px 0;
+}
+
+.nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.nav-link:last-child {
+    padding: 0 !important;
+}
+
+.nav-item {
+    margin-right: 44px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(153, 153, 153);
+}
+.header-info {
+    padding-top: 30px;
+}
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.header-text_wrap {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-img {
+    display: flex;
+    justify-content: flex-end;
+
+}
+.header-img_pic {
+    text-align: center;
+}
+.header-text_title {
+    font-size: 55px;
+    font-weight: bold;
+    padding: 0 0 5px 0;
+    text-transform: uppercase;
+    font-family: 'Coda Caption', sans-serif;
+    letter-spacing: -1px;
+    color: #beebe9;
+    text-shadow: 1px 1px 2px black;
+    /* Параметры тени */
+}
+
+.header-text_aboutme {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black;
+}
+
+.header-text_description {
+    padding: 20px 0;
+    font-size: 20px;
+    color: rgb(153, 153, 153);
+    padding-bottom: 36px;
+}
+
+.header-text_icons a {
+    color: #8ac6d1;
+    font-size: 30px;
+    padding-right: 10px;
+    transition: 0.8s;
+    line-height: 29.71px;
+}
+
+.header-text_icons a:hover {
+    color: teal;
+    text-decoration: none;
+}
+.About-me {
+    padding-top: 35px;
+}
+.About-me_img {
+    display: flex;
+    align-items: center;
+    border: 8px solid coral;
+
+    
+}
+.About-me_title {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 0 5px 0;
+    text-transform: uppercase;
+    font-family: 'Coda Caption', sans-serif;
+    letter-spacing: -1px;
+    color: #beebe9;
+    text-shadow: 1px 1px 2px black;
+}
+
+.About-me_title span{
+    color: #ff7f50;
+}
+
+.About-me_text {
+    padding: 6px 0 15px 0;
+    font-size: 18px;
+    color: rgb(153, 153, 153);
+}
+.About-me_list {
+    display: flex;
+    font-size: 18px;
+    color: rgb(153, 153, 153);
+}
+.About-me_list1 {
+    padding-right: 20px;
+    font-weight: bold;
+}
+.about-me_wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.btn-CV {
+    background-color: coral;
+    color: white;
+    padding: 12px 14px;
+    max-width: 138px;
+    text-align: center;
+    border-radius: 7px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.btn-CV:hover {
+    text-decoration: none;
+    background-color: rgb(219, 74, 48);
+    color: white;
+}
+
+.services-title {
+
+    margin: 50px 0 10px 0;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 0 5px 0;
+    text-transform: uppercase;
+    font-family: 'Coda Caption', sans-serif;
+    letter-spacing: -1px;
+    color: #beebe9;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+.line {
+    
+    width: 100px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    border-top: 2px solid coral;
+}
+.services-title span {
+    color: coral;
+}
+
+.services-icon_img {
+  width: 40px;
+}
+
+.services-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 235, 242);
+    padding: 40px 50px;
+    transition: 0.4s;
+}
+.services-wrap:hover {
+    background-color: #edb7b7;
+}
+.services-wrap:hover>.services-icon {
+    background-color: #fff;
+}
+.services-icon {
+    padding: 10px;
+    border: 2px solid rgb(192, 192, 192);
+    transition: 0.4s;
+}
+
+.services-desc_title {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.servises-desc {
+    text-align: center;
+    color: rgb(153, 153, 153);
+}
+
+.portfolio-title {
+    margin: 50px 0 10px 0;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 0 5px 0;
+    text-transform: uppercase;
+    font-family: 'Coda Caption', sans-serif;
+    letter-spacing: -1px;
+    color: #beebe9;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+.portfolio-title span {
+    color: coral;
+}
+
+.row {
+    padding-bottom: 7.5px;
+    padding-top: 7.5px;
+}
+
+.portfolio-wrap {
+   display: flex;
+}
+
+.img_photo {
+    height: 243px;
+}
+
+.text-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+    text-align: center;
+    height: 100%;
+    transition: 0.8s;
+    width: calc(100% - 14px);
+    position: absolute;
+    display: none;
+}
+
+.portfolio-wrap:hover> .text-wrap {
+    display: flex;
+    background-color: coral;
+
+}
+
+
+.portfolio-desc_title {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 15px;
+    color: #ffffff;
+}
+.portfolio-desc {
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.portfolio-img {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.row-elements {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.elements-wrap {
+    background-color: rgb(253, 241, 241);
+    box-shadow: 0 0 10px 2px #beebe9;
+
+}
+
+.elements-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+
+}
+.elements-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Coda Caption', sans-serif;
+    color: coral;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+.elements-text {
+    padding-top: 7px;
+    font-size: 18px;
+    color: rgb(153, 153, 153);
+}
+
+.blog-img {
+    width: 100%;
+    height: 273px;
+}
+
+.blog-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Coda Caption', sans-serif;
+    color: #beebe9;
+    letter-spacing: -2px;
+    text-shadow: 1px 1px 2px black;
+}
+.blog-info {
+    
+    font-weight: bold;
+    padding-bottom: 15px;
+    color: white;
+    font-size: 12px;
+ 
+    
+}
+.blog-info span {
+    
+    padding-bottom: 15px;
+    color:rgb(71, 71, 71);
+
+}
+
+.blog-text {
+    font-weight: bold;
+    padding-bottom: 15px;
+    color: rgb(194, 179, 179);;
+}
+
+.info {
+    padding-left: 20px;
+}
+
+.blog-readmore {
+    font-weight: bold;
+    padding-bottom: 15px;
+    color: coral;
+   
+}
+
+
+.blog-wrap {
+    background-color: rgb(255, 227, 227);
+    box-shadow: 0 0 5px 2px rgb(255, 255, 255);
+}
+
+.contact-title {
+    margin: 50px 0 10px 0;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 0 5px 0;
+    text-transform: uppercase;
+    font-family: 'Coda Caption', sans-serif;
+    letter-spacing: -1px;
+    color: #beebe9;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+.contact-title span {
+    color: coral;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.message {
+    margin-bottom: 20px;
+    
+}
+
+input[type="submit"] {
+    background-color: cadetblue;
+    border: none;
+    border-radius: 6px;
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.mes {
+    height: 130px;
+}
+.copy {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
